@@ -21,7 +21,7 @@ public class Aula02TiposPrimitivos {
 
         String nome = "Theo";
 
-        System.out.println("a idade é "+age+" anos");
+        System.out.println("a idade é " + age + " anos");
         System.out.println(verdadeiro);
         System.out.println(caractere);
         System.out.println(caractere2);
