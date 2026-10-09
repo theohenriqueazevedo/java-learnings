@@ -27,5 +27,10 @@ public class Aula05EstruturasCondicionais04 {
         else salarioAnual2 = salarioAnual2 * terceiraFaixa;
 
         System.out.println("Voce deve pagar "+salarioAnual2+ " de imposto");
+
+
+
+        
+
     }
 }
