@@ -1,4 +1,4 @@
-# ☕ Maratona Java — Virado no Jiraya
+# ☕ Maratona Java
 
 This repository contains my studies and exercises from the **Maratona Java Virado no Jiraya** course by DevDojo.
 
