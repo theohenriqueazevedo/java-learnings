@@ -7,9 +7,12 @@ public class CalculadoraTest01 {
 
         Calculadora calculadora = new Calculadora();
         //new Calculadora cria um obj da classe Calculadora
+        //calculadora
         calculadora.somaDoisNumeros();
-        System.out.println("finalizando calctest01");
+
         calculadora.subtraiDoisNumeros();
+
+        System.out.println("finalizando calctest01");
 
     }
 }
