@@ -29,9 +29,11 @@ public class EstudanteTest01 {
         imprimeEstudante.imprimeEstudante(estudante01);
         imprimeEstudante.imprimeEstudante(estudante02);
         //quando chamar esse meotodo, o metodo recebera uma copia do endereco de memoria estudante0
-        //Durante a execução de `imprimir`, tanto a variável `estudante01` quanto a variável parâmetro `estudante` apontam para **o mesmo objeto na memória
+        //Durante a execução de `imprimir`, tanto a variável `estudante01` quanto a variável parâmetro `estudante` apontam para **o mesmo objeto na memória, entao se eu mudar ele dentro do metodo, eu mudo o valor real que esta na memoria
 
-
+        System.out.println("dentro do estudanteTest");
+        System.out.println(estudante01.nome);
+        System.out.println(estudante02.nome);
 
 
     }
