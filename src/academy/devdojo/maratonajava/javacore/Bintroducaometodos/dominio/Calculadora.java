@@ -40,4 +40,21 @@ public class Calculadora {
         System.out.println(num1);
         System.out.println(num2);
     }
+
+    public void somaArray(int[] numeros){
+        int soma = 0;
+        for (int num : numeros){
+            soma += num;
+        }
+        System.out.println(soma);
+    }
+
+    public void somaVarArgs(int ... numeros){
+        //varargs so funciona se apenas o vetor/valores sao passados, nao recebe maisd e um argumento, ou se tiver mais de um, o varargs deve ser o ultimo
+        int soma = 0;
+        for (int num : numeros){
+            soma += num;
+        }
+        System.out.println(soma);
+    }
 }
