@@ -17,6 +17,13 @@ public class Carro {
         System.out.println("Velocidade maxima; "+ this.velocidadeMax);
         System.out.println("Velocidade limite; "+ Carro.velocidadeLim);
     }
+    public static void setVelocidadeLim(double velocidadeLim){
+        //this nao existe para public, pois ele se refere ao objeto. em imprime tem que ter uma instancia
+        Carro.velocidadeLim = velocidadeLim;
+    }
+    public static double getVelocidadeLim(){
+        return Carro.velocidadeLim;
+    }
 
 
     public String getNome() {
