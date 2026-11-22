@@ -11,13 +11,16 @@ public class Professor {
         System.out.println(seminarios);
     }
 
+    public Professor(){
+
+    }
     public Professor(String nome, String especialidade) {
         this.nome = nome;
         this.especialidade = especialidade;
     }
 
     public String getEspecialidade() {
-        return especialidade;
+        return this.especialidade;
     }
 
     public void setEspecialidade(String especialidade) {
@@ -25,7 +28,7 @@ public class Professor {
     }
 
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
     public void setNome(String nome) {
