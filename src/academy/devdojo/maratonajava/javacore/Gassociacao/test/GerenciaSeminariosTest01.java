@@ -16,10 +16,12 @@ public class GerenciaSeminariosTest01 {
         Local[] locais = new Local[10];
         Estudante[] estudantes =  new Estudante[10];
         Seminario[] seminarios = new Seminario[10];
+        Estudante[] estudantesSeminario = new Estudante[10];
 
         int contadorProfessor = 0;
         int contadorLocal = 0;
         int contadorEstudante = 0;
+        int contadorSeminario = 0;
 
         int escolha = 0;
         String endereco;
@@ -81,17 +83,56 @@ public class GerenciaSeminariosTest01 {
                     System.out.println("Aluno salvo com sucesso!");
                 }
             } else if(escolha == 4) {
+
                 System.out.println("Digite o titulo do seminário:");
                 titulo = entrada.nextLine();
+
                 Seminario seminario = new Seminario(titulo);
+
                 System.out.println("Escolha o Professor que deseja cadastrar:");
                 for (int i = 0; i < contadorProfessor; i++) {
                     System.out.println(i + " - " + professores[i].getNome());
                 }
+
                 int indiceProfessorEscolhido = entrada.nextInt();
                 entrada.nextLine();
+
                 seminario.setProfessor(professores[indiceProfessorEscolhido]);
 
+                for (int i = 0; i < contadorLocal; i++) {
+                    System.out.println(i + " - " + locais[i].getEndereco());
+                }
+
+                System.out.println("Escolha o local:");
+                int indiceLocal = entrada.nextInt();
+                entrada.nextLine();
+
+                seminario.setLocal(locais[indiceLocal]);
+
+                System.out.println("Quantos estudantes participarão?");
+                int quantidade = entrada.nextInt();
+                entrada.nextLine();
+
+                for (int i = 0; i < quantidade; i++) {
+
+                    for (int j = 0; j < contadorEstudante; j++) {
+                        System.out.println(j + " - " + estudantes[j].getNome());
+                    }
+
+                    System.out.println("Escolha o estudante:");
+                    int indiceEstudante = entrada.nextInt();
+                    entrada.nextLine();
+
+                    estudantesSeminario[i] = estudantes[indiceEstudante];
+                }
+
+                seminario.setEstudante(estudantesSeminario);
+
+                //Armazenar o seminário
+                seminarios[contadorSeminario] = seminario;
+                contadorSeminario++;
+
+                System.out.println("Seminario cadastrado com sucesso!");
 
             }
         }
