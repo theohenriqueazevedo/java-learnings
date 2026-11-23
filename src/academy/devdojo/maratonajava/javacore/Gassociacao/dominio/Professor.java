@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.javacore.Gassociacao.dominio;
 public class Professor {
     private String nome;
     private String especialidade;
-    public Seminario[] seminarios;
+    private Seminario[] seminarios;
 
     public void imprime(){
         System.out.println(nome);

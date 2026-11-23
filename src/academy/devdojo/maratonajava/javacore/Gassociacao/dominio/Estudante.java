@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.javacore.Gassociacao.dominio;
 public class Estudante {
     private String nome;
     private int idade;
-    public Seminario seminario;
+    private Seminario seminario;
 
     public Estudante(String nome, int idade) {
         this.nome = nome;
