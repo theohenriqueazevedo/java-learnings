@@ -6,6 +6,10 @@ public class Pessoa {
     protected Endereco endereco;
     //todas as subclasses tem acesso como se fosse public
 
+    public Pessoa(String nome){
+        this.nome = nome;
+    }
+
     public void imprime(){
         System.out.println(this.nome);
         System.out.println(this.cpf);

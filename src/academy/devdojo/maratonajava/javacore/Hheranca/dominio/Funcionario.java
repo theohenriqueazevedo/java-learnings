@@ -7,6 +7,10 @@ public class Funcionario extends Pessoa{
 //    super.metodo()	Chama a implementação do metodo na classe pai.
 //    super()	        Chama o construtor da classe pai.
 
+    public Funcionario(String nome){
+        super(nome);
+    }
+
     public void imprime(){
         super.imprime();
         System.out.println(this.salario);

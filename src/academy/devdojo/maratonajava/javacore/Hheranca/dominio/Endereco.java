@@ -5,9 +5,9 @@ public class Endereco {
     private String cep;
     
     public void imprime(){
-        Pessoa p = new Pessoa();
-        p.setNome("joao");
-        System.out.println(p.nome);
+//        Pessoa p = new Pessoa();
+//        p.setNome("joao");
+//        System.out.println(p.nome);
         //isso quebra o encapsulamento
     }
 
