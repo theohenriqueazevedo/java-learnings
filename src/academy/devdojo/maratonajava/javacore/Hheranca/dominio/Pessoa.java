@@ -5,8 +5,14 @@ public class Pessoa {
     protected String cpf;
     protected Endereco endereco;
     //todas as subclasses tem acesso como se fosse public
-
+    static {
+        System.out.println("Dentro do bloco ini estatico de pessoa 1");
+    }
+    {
+        System.out.println("Dentro do bloco ini nao estatico de pessoa 2");
+    }
     public Pessoa(String nome){
+        System.out.println("Dentro do construtor de pessoa");
         this.nome = nome;
     }
 
